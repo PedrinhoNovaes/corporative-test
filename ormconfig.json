@@ -1,0 +1,24 @@
+{
+    "type": "mysql",
+    "host": "database",
+    "port": 5432,
+    "username": "root",
+    "password": "medical123",
+    "database": "medical",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+       "src/entities/*.ts"
+    ],
+    "migrations": [
+       "src/migrations/*.ts"
+    ],
+    "subscribers": [
+       "src/subscriber/*.ts"
+    ],
+    "cli": {
+       "entitiesDir": "src/entities",
+       "migrationsDir": "src/migration",
+       "subscribersDir": "src/subscriber"
+    }
+ }
